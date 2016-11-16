@@ -2,16 +2,32 @@
   <block type="math_number" id="3" x="-160" y="-88">
     <field name="NUM">90</field>
   </block>
-  <block type="movement_setmotors" id="1" inline="true" x="198" y="262">
-    <value name="BOTHMOVLEFT">
-      <block type="math_number" id="2">
-        <field name="NUM">100</field>
+  <block type="movement_forward" id="30" x="43" y="58">
+    <next>
+      <block type="movement_setmotors" id="1" inline="true">
+        <value name="BOTHMOVLEFT">
+          <block type="math_number" id="2">
+            <field name="NUM">100</field>
+          </block>
+        </value>
+        <value name="BOTHMOVRIGHT">
+          <block type="math_number" id="20">
+            <field name="NUM">90</field>
+          </block>
+        </value>
+        <next>
+          <block type="robot_delay" id="32" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="39">
+                <field name="NUM">2000</field>
+              </block>
+            </value>
+            <next>
+              <block type="movement_stop" id="52"></block>
+            </next>
+          </block>
+        </next>
       </block>
-    </value>
-    <value name="BOTHMOVRIGHT">
-      <block type="math_number" id="20">
-        <field name="NUM">90</field>
-      </block>
-    </value>
+    </next>
   </block>
 </xml>
