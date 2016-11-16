@@ -1,14 +1,35 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_setmotors" id="17" inline="true" x="-846" y="-356">
-    <value name="BOTHMOVLEFT">
-      <block type="math_number" id="24">
-        <field name="NUM">98</field>
+  <block type="controls_repeat" id="77" inline="true" x="-879" y="-394">
+    <value name="TIMES">
+      <block type="math_number" id="84">
+        <field name="NUM">11100</field>
       </block>
     </value>
-    <value name="BOTHMOVRIGHT">
-      <block type="math_number" id="1">
-        <field name="NUM">100</field>
+    <statement name="DO">
+      <block type="movement_setmotors" id="17" inline="true">
+        <value name="BOTHMOVLEFT">
+          <block type="math_number" id="24">
+            <field name="NUM">97</field>
+          </block>
+        </value>
+        <value name="BOTHMOVRIGHT">
+          <block type="math_number" id="1">
+            <field name="NUM">100</field>
+          </block>
+        </value>
+        <next>
+          <block type="robot_delay" id="45" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="91">
+                <field name="NUM">1</field>
+              </block>
+            </value>
+          </block>
+        </next>
       </block>
-    </value>
+    </statement>
+    <next>
+      <block type="movement_stop" id="112"></block>
+    </next>
   </block>
 </xml>
