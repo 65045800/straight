@@ -8,26 +8,12 @@
     <statement name="DO">
       <block type="movement_reverse" id="122">
         <next>
-          <block type="movement_setmotors" id="17" inline="true">
-            <value name="BOTHMOVLEFT">
-              <block type="math_number" id="24">
-                <field name="NUM">97</field>
+          <block type="robot_delay" id="45" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="91">
+                <field name="NUM">1</field>
               </block>
             </value>
-            <value name="BOTHMOVRIGHT">
-              <block type="math_number" id="1">
-                <field name="NUM">100</field>
-              </block>
-            </value>
-            <next>
-              <block type="robot_delay" id="45" inline="true">
-                <value name="DELAY">
-                  <block type="math_number" id="91">
-                    <field name="NUM">1</field>
-                  </block>
-                </value>
-              </block>
-            </next>
           </block>
         </next>
       </block>
